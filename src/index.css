@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-yt-red: #FF0000;
+  --color-yt-red-light: #FF4D4D;
+  --color-yt-grey: #606060;
+  --color-yt-bg: #F9F9F9;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-slate-200 shadow-sm;
+}
+
+.yt-button-primary {
+  @apply bg-yt-red hover:bg-yt-red-light text-white font-medium py-2 px-6 rounded-lg transition-all duration-200 shadow-sm active:scale-95;
+}
+
+.yt-button-secondary {
+  @apply bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-2 px-6 rounded-lg transition-all duration-200 active:scale-95;
+}
+
+.yt-input {
+  @apply w-full px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-yt-red/20 focus:border-yt-red transition-all;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
