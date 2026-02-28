@@ -459,7 +459,7 @@ const ChannelDetails = ({ channel, onClose }: { channel: ChannelListing, onClose
 
   const handleBuyNow = () => {
     const message = `Hi, I'm interested in buying ${channel.name} (ID: ${channel.listingId}). ${inquiry}`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/918958890396?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
@@ -672,7 +672,7 @@ const SellForm = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
-      window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+      window.open(`https://wa.me/918958890396?text=${encodeURIComponent(message)}`, '_blank');
       setFormData({
         name: '', niche: 'Gaming', subscribers: '', watchHours: '',
         monetized: 'No', monthlyRevenue: '', askingPrice: '',
@@ -1257,7 +1257,7 @@ const LearnCourse = () => {
                 </div>
 
                 <a 
-                  href={`https://wa.me/919876543210?text=Hi, I'm interested in the ${course.title} (${course.tier}).`}
+                  href={`https://wa.me/918958890396?text=Hi, I'm interested in the ${course.title} (${course.tier}).`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full ${course.tier === 'Premium Type' ? 'bg-slate-900' : 'bg-emerald-500 hover:bg-emerald-600'} text-white font-bold py-4 rounded-2xl transition-all flex items-center justify-center shadow-lg group-hover:scale-[1.02]`}
@@ -1317,7 +1317,7 @@ const Contact = () => (
           <p className="text-slate-400 mb-10 text-lg max-w-md relative z-10">Get instant, premium support from our expert team for all your channel trading needs.</p>
           
           <a 
-            href="https://wa.me/919876543210" 
+            href="https://wa.me/918958890396" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-5 px-12 rounded-2xl transition-all flex items-center text-lg shadow-xl shadow-emerald-500/20 relative z-10 group-hover:scale-105"
@@ -1611,7 +1611,7 @@ export default function App() {
       <AnimatePresence>
         {showWhatsApp && (
           <motion.a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/918958890396"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ scale: 0, opacity: 0, rotate: -45 }}
